@@ -1,0 +1,47 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import  { add,sub,multi,divided } from './Calc';
+
+ReactDOM.render(
+
+<>
+<ul>
+    <li>the add two sum number is:{add(40,4)}</li>
+    <li>the sub two sub number is:{sub (230,49)}</li>
+    <li>the multi two multi number is:{multi (233,58)}</li>
+    <li>the divided tow number is:{divided (3445,34)}</li>
+</ul>
+</>,
+document.getElementById('root')
+);
+
+
+//some function is calling to react jsx ......and calling to index,js 
+
+
+
+
+function add(a,b){
+    let sum=a+b;
+    return sum;
+}
+
+function sub(a,b){
+
+    let sub=a-b;
+    return sub;
+}
+
+function multi(a,b){
+
+    let multi=a*b;
+    return multi;
+}
+
+function divided(a,b){
+
+    let divided=a/b;
+    divided=divided.toFixed(2);
+    return divided;
+}
+export {add,sub,multi,divided} ;
